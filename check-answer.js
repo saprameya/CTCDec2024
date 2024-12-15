@@ -18,6 +18,8 @@ function checkAnswer(answer) {
 	checkWP(answer);
 	if (winning) console.log('You won!');
 	else console.log('You lost!');
+
+	blackOut.classList.add('over');
 }
 
 let winning = true;
@@ -55,6 +57,8 @@ function checkOneCorr(answer) {
 	}
 	if (count !== 1) winning = false;
 	if (winning) checkNoCorr(answer);
+
+	
 }
 
 function checkNoCorr(answer) {

@@ -11,6 +11,7 @@ const input1 = document.getElementById('input1');
 const input2 = document.getElementById('input2');
 const input3 = document.getElementById('input3');
 let activeInput = input1;
+let blackOut = document.getElementById('black-out');
 
 let clueCodes = [
 	wPArray.join(''),
