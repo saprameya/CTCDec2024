@@ -16,10 +16,11 @@ form.addEventListener('submit', (event) => {
 
 function checkAnswer(answer) {
 	checkWP(answer);
-	if (winning) console.log('You won!');
-	else console.log('You lost!');
+	if (winning) message.innerText = 'You won!';
+	else message.innerText = 'You lost... Better luck next time!';
 
 	blackOut.classList.add('over');
+	messageModal.classList.add('show');
 }
 
 let winning = true;
@@ -57,8 +58,6 @@ function checkOneCorr(answer) {
 	}
 	if (count !== 1) winning = false;
 	if (winning) checkNoCorr(answer);
-
-	
 }
 
 function checkNoCorr(answer) {

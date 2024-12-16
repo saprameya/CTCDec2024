@@ -14,6 +14,10 @@ const input2 = document.getElementById('input2');
 const input3 = document.getElementById('input3');
 let activeInput = input1;
 let blackOut = document.getElementById('black-out');
+const messageModal = document.querySelector('.message-modal');
+const message = document.querySelector('.message');
+const close = document.querySelector('.close');
+const playAgainBtn = document.querySelector('.play-again-btn');
 
 let clueCodes = [
 	wPArray.join(''),
@@ -55,7 +59,6 @@ for (let index = 0; index < 4; index++) {
 answers.forEach((input) => {
 	input.addEventListener('click', (e) => {
 		e.preventDefault();
-
 		activeInput = input;
 	});
 });
@@ -64,12 +67,24 @@ buttons.forEach((button) => {
 	button.addEventListener('click', (e) => {
 		e.preventDefault();
 		activeInput.value = button.value;
+		activeInput = activeInput.nextSibling;
 	});
 });
 
-instructions.addEventListener('click', (e) =>{
-	console.log(`first`)
-	if(instructionsList.classList.contains('expand'))	
-	instructionsList.classList.remove('expand');
-else instructionsList.classList.add('expand')
-})
+instructions.addEventListener('click', (e) => {
+	console.log(`first`);
+	if (instructionsList.classList.contains('expand'))
+		instructionsList.classList.remove('expand');
+	else instructionsList.classList.add('expand');
+});
+
+close.addEventListener('click', (e) => {
+	messageModal.classList.remove('show');
+});
+
+playAgainBtn.addEventListener('click', (e) => {
+	input1.value = '';
+	input2.value = '';
+	input3.value = '';
+	location.reload();
+});
