@@ -15,32 +15,30 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<div class="black-out " id="black-out">
-				
-			</div>
+			<div class="black-out" id="black-out"></div>
 			<h1>Crack the Code</h1>
-
+			<div class="instructions">
+				<h5 id="instructions"> Instructions </h5>
+				<div class="instructions-wrapper">
+					<ul id="instructions-list">
+						<li>You will be given four clues to guess a three digit code.</li>
+						<li>Digits will not be repeated in the code.</li>
+						<li>There may be multiple correct solutions.</li>
+						<li>You can click on a box to change the digit you want to enter.</li>
+					</ul>
+				</div>
+			</div>
 			<div class="clue-container">
-				<div class="clue" id="clue1">
-
-				</div>
-				<div class="clue" id="clue2">
-					
-
-				</div>
-				<div class="clue" id="clue3">
-					
-
-				</div>
-				<div class="clue" id="clue4">
-					
-				</div>
+				<div class="clue" id="clue1"></div>
+				<div class="clue" id="clue2"></div>
+				<div class="clue" id="clue3"></div>
+				<div class="clue" id="clue4"></div>
 			</div>
 			<form id="puzzle-form">
 				<div class="ans-container">
 					<input type="text" class="answer" id="input1" name="input1" />
-					<input type="text" class="answer" id="input2" name="input2"/>
-					<input type="text" class="answer" id="input3" name="input3"/>
+					<input type="text" class="answer" id="input2" name="input2" />
+					<input type="text" class="answer" id="input3" name="input3" />
 				</div>
 				<div class="btn-container">
 					<button class="number" value="" style="display: none"></button>
@@ -55,7 +53,7 @@
 					><button class="number" value="8">8</button
 					><button class="number" value="9">9</button>
 				</div>
-				<button class="submit-btn" type="submit" >Check Answer</button>
+				<button class="submit-btn" type="submit">Check Answer</button>
 			</form>
 		</div>
 	</body>

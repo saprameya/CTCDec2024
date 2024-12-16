@@ -1,0 +1,9 @@
+Instructions
+
+You will be given four clues to guess a three digit code.
+
+Digits will not be repeated in the code.
+
+There may be multiple correct solutions.
+
+You can click on a box to change the digit you want to enter. 

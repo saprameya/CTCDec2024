@@ -31,16 +31,18 @@ body {
 	width: 100vw;
 	color: var(--main-font-color);
 	font-family: 'Roboto', sans-serif;
-	font-size: clamp(0.9rem, 1vw + 0.5rem, 2rem);
+	font-size: clamp(1rem, 1vw + 0.5rem, 2rem);
     padding: 1rem;
     position: relative;
+	background-color: var(--main-bg-color);
 }
 
 .black-out{
     display: none;
     position: absolute;
     background-color: hsla(0, 0%, 0%, 0.37);
-    min-height: 100vh;
+    height: 140vh;
+	min-height: 600px;
     min-width: 100vw;
     z-index: 100;
 }
@@ -54,7 +56,6 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 60%;
 	margin: 10px auto;
 }
 h1{
@@ -64,6 +65,46 @@ h1{
     text-align: center;
 }
 
+.instructions{
+	min-width: 50%;
+}
+.instructions-wrapper{
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	color: var(--main-bg-color);
+	background-color: var(--main-font-color);
+}
+
+.instructions.expand{
+	min-height: 100%;
+}
+
+.instructions h5{
+	text-align: center;
+	text-decoration: underline;
+	padding: 5px;
+	cursor: pointer;
+}
+
+
+.instructions ul{
+	display: none;
+	border: 1px solid var(--main-font-color);
+	border-top: none;
+	padding: 15px;
+	
+
+}
+
+#instructions-list.expand{
+	display: block;
+}
+.instructions li{
+	list-style: none;
+	padding: 5px;
+}
 form{
     display: flex;
     flex-direction: column;
@@ -75,19 +116,19 @@ form{
 .clue-container {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	width: 50%;
+	/* width: 50%; */
 	margin: 10px auto;
 	gap: 2rem;
 	text-align: center;
 }
 
 .clue-code {
-	font-size: 2rem;
+	/* font-size: 2rem; */
 	font-weight: bold;
 }
 
 .clue-text {
-	font-size: 1.2rem;
+	/* font-size: 1.2rem; */
 }
 .ans-container {
 	display: flex;
@@ -101,6 +142,15 @@ form{
 	width: 2rem;
 	height: 2rem;
 	text-align: center;
+}
+
+button{
+	background-color: var(--main-font-color);
+	color: var(--main-bg-color);
+	border-radius: 10px;
+	font-size: 1.3rem;
+	text-align: center;
+	padding: 20px;
 }
 
 .btn-container {
@@ -123,5 +173,7 @@ form{
 
 .submit-btn{
     width: 30%;
+	font-size: 1rem;
+	padding: 5px;
 }
 

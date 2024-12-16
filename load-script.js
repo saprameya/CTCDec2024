@@ -1,3 +1,5 @@
+const instructions = document.querySelector('#instructions');
+const instructionsList = document.querySelector('#instructions-list');
 const form = document.getElementById('puzzle-form');
 let clue1 = document.getElementById('clue1');
 let clue2 = document.getElementById('clue2');
@@ -65,8 +67,9 @@ buttons.forEach((button) => {
 	});
 });
 
-// form.onsubmit() =  => event {
-// 	event.preventDefault();
-
-// 	input1.innerText = event.target.value;
-// };
+instructions.addEventListener('click', (e) =>{
+	console.log(`first`)
+	if(instructionsList.classList.contains('expand'))	
+	instructionsList.classList.remove('expand');
+else instructionsList.classList.add('expand')
+})
