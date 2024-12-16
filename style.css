@@ -104,6 +104,14 @@ h1{
 .instructions{
 	min-width: 50%;
 }
+
+.arrow-down{
+	display: inline;
+}
+
+.arrow-up{
+	display: none;
+}
 .instructions-wrapper{
 	display: block;
 	width: 80%;
@@ -119,7 +127,7 @@ h1{
 
 .instructions h5{
 	text-align: center;
-	text-decoration: underline;
+	/* text-decoration: underline; */
 	padding: 5px;
 	cursor: pointer;
 }

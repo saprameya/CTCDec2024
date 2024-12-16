@@ -18,6 +18,9 @@ const messageModal = document.querySelector('.message-modal');
 const message = document.querySelector('.message');
 const close = document.querySelector('.close');
 const playAgainBtn = document.querySelector('.play-again-btn');
+const arrowDown = document.querySelector('.arrow-down');
+const arrowUp = document.querySelector('.arrow-up');
+
 
 let clueCodes = [
 	wPArray.join(''),
@@ -74,8 +77,14 @@ buttons.forEach((button) => {
 instructions.addEventListener('click', (e) => {
 	console.log(`first`);
 	if (instructionsList.classList.contains('expand'))
-		instructionsList.classList.remove('expand');
-	else instructionsList.classList.add('expand');
+		{instructionsList.classList.remove('expand');
+			arrowDown.style.display = 'inline';
+			arrowUp.style.display = 'none';
+		}
+	else {instructionsList.classList.add('expand');
+		arrowDown.style.display = 'none';
+			arrowUp.style.display = 'inline';
+	}
 });
 
 close.addEventListener('click', (e) => {
