@@ -152,8 +152,9 @@ form{
 .clue-container {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	margin: 10px auto;
-	gap: 2rem;
+	margin: 10vh auto;
+	column-gap: 2vw;
+	row-gap: 7vh;
 	text-align: center;
 }
 
@@ -201,7 +202,7 @@ button{
 	display: flex;
 	width: 2rem;
 	height: 2rem;
-	margin: 10px;
+	margin: 1vh;
 	align-items: center;
 	justify-content: center;
 }

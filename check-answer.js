@@ -15,12 +15,22 @@ form.addEventListener('submit', (event) => {
 });
 
 function checkAnswer(answer) {
-	checkWP(answer);
-	if (winning) message.innerText = 'You won!';
-	else message.innerText = 'You lost... Better luck next time!';
+	if (input1.value === '' || input2.value === '' || input3.value === '') {
+		alert('You must enter all three numbers');
+	} else if (
+		input1.value === input2.value ||
+		input1.value === input3.value ||
+		input2.value === input3.value
+	) {
+		alert('repetition of digits is not allowed');
+	} else {
+		checkWP(answer);
+		if (winning) message.innerText = 'You won!';
+		else message.innerText = 'You lost... Better luck next time!';
 
-	blackOut.classList.add('over');
-	messageModal.classList.add('show');
+		blackOut.classList.add('over');
+		messageModal.classList.add('show');
+	}
 }
 
 let winning = true;
