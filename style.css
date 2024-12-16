@@ -181,9 +181,12 @@ form{
 .answer {
 	margin: 10px;
 	font-size: 1.3rem;
+	border-color: var(--main-font-color);
 	width: 2rem;
 	height: 2rem;
 	text-align: center;
+	box-shadow: inset 3px 3px 3px hsl(0, 0%, 80%);
+
 }
 
 button{
@@ -195,6 +198,11 @@ button{
 	text-align: center;
 	padding: 1.2vw;
 	border: 3px solid rgb(229, 233, 32);
+	box-shadow: 5px 5px 20px hsl(0, 0%, 40%);
+}
+
+button:active{
+	box-shadow: inset 5px 5px 20px hsl(0, 0%, 40%);
 }
 
 .btn-container {
