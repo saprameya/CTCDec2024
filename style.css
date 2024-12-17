@@ -232,5 +232,6 @@ button:active {
 
 	.answer {
 		background-color: var(--answer-bg-color);
+		color: #000;
 	}
 }
