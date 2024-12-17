@@ -213,11 +213,11 @@ button:active {
 	padding: 1vw;
 }
 
-.dark-mode {
+/* .dark-mode {
 	--main-font-color: #fffbbe;
 	--main-bg-color: #a374d5;
 	--answer-bg-color: #a374d5;
-}
+} */
 
 @media (prefers-color-scheme: dark) {
 	body {
