@@ -6,7 +6,6 @@
 	padding: 0;
 }
 
-
 body {
 	--main-font-color: #a374d5;
 	--main-bg-color: #fffbbe;
@@ -214,20 +213,24 @@ button:active {
 	padding: 1vw;
 }
 
-@media (prefers-color-scheme: dark) {
-	body{
-		--main-font-color: #fffbbe ;
+.dark-mode {
+	--main-font-color: #fffbbe;
 	--main-bg-color: #a374d5;
-	
-	--answer-bg-color:  #babade;
+	--answer-bg-color: #babade;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		--main-font-color: #fffbbe;
+		--main-bg-color: #a374d5;
+		--answer-bg-color: #babade;
 	}
 
-	h1{
+	h1 {
 		text-shadow: none;
 	}
 
-	.answer{
+	.answer {
 		background-color: var(--answer-bg-color);
-		
 	}
 }
