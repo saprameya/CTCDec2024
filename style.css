@@ -231,7 +231,7 @@ button:active {
 		text-shadow: none;
 	}
 
-	.answer {
+	/* .answer {
 		background-color: var(--main-bg-color);
 		color: #000;
 	}
@@ -239,5 +239,5 @@ button:active {
 	.wrapper{
 		color: var(--main-font-color);
 		background-color: var(--main-bg-color);
-	}
+	} */
 }
