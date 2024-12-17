@@ -70,7 +70,7 @@ buttons.forEach((button) => {
 	button.addEventListener('click', (e) => {
 		e.preventDefault();
 		activeInput.value = button.value;
-		activeInput = activeInput.nextSibling;
+		activeInput = activeInput.nextElementSibling;
 	});
 });
 
