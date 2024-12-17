@@ -216,7 +216,7 @@ button:active {
 .dark-mode {
 	--main-font-color: #fffbbe;
 	--main-bg-color: #a374d5;
-	--answer-bg-color: #babade;
+	--answer-bg-color: #a374d5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -231,7 +231,7 @@ button:active {
 	}
 
 	.answer {
-		background-color: var(--answer-bg-color);
+		background-color: var(--main-bg-color);
 		color: #000;
 	}
 }
