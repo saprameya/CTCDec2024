@@ -21,11 +21,6 @@ const playAgainBtn = document.querySelector('.play-again-btn');
 const arrowDown = document.querySelector('.arrow-down');
 const arrowUp = document.querySelector('.arrow-up');
 
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
-if (prefersDarkScheme.matches) {
-    document.body.classList.add('dark-mode');
-}
 
 let clueCodes = [
 	wPArray.join(''),
