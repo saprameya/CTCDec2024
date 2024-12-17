@@ -214,7 +214,7 @@ button:active {
 }
 
 .dark-mode {
-	--main-font-color: #fffbbe;
+	--main-font-color: #fff;
 	--main-bg-color: #a374d5;
 	--answer-bg-color: #babade;
 }
