@@ -224,6 +224,7 @@ button:active {
 		--main-font-color: #fffbbe;
 		--main-bg-color: #a374d5;
 		--answer-bg-color: #babade;
+		background-color: var(--main-bg-color);
 	}
 
 	h1 {
@@ -233,5 +234,10 @@ button:active {
 	.answer {
 		background-color: var(--main-bg-color);
 		color: #000;
+	}
+
+	.clue-container{
+		color: var(--main-font-color);
+		background-color: var(--main-bg-color);
 	}
 }
