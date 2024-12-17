@@ -5,21 +5,7 @@
 	margin: 0;
 	padding: 0;
 }
-.first-color {
-	background: #fffbbe;
-}
 
-.second-color {
-	background: #eec1ea;
-}
-
-.third-color {
-	background: #be97dc;
-}
-
-.fourth-color {
-	background: #a374d5;
-}
 
 body {
 	--main-font-color: #a374d5;
@@ -161,7 +147,7 @@ form {
 .clue-container {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	margin: 10vh auto;
+	margin: 6vw auto;
 	column-gap: 2vw;
 	row-gap: 7vh;
 	text-align: center;
@@ -226,4 +212,13 @@ button:active {
 	width: 30%;
 	font-size: 1rem;
 	padding: 1vw;
+}
+
+@media (prefers-color-scheme: dark) {
+	body{
+		--main-font-color: #fffbbe ;
+	--main-bg-color: #a374d5;
+	--answer-bg-color:#be97dc;
+	--answer-bg-color:  rgb(185, 185, 221);
+	}
 }
