@@ -225,10 +225,10 @@ button:active {
 		text-shadow: none;
 		text-shadow: 2px 0 hsl(0, 0%, 91%), -2px 2px 0 hsl(0, 0%, 91%),
 			-2px -2px 0 hsl(0, 0%, 91%), 2px -2px 0 hsl(0, 0%, 91%),
-			0px 0px 0 hsl(0, 0%, 51%), 1px 1px 0 hsl(0, 0%, 35%),
-			2px 2px 0 hsl(0, 0%, 39%), 3px 3px 0 hsl(0, 0%, 73%),
-			4px 4px 0 hsl(0, 0%, 28%), 5px 5px 0 hsl(0, 0%, 22%),
-			6px 6px 0 hsl(0, 0%, 56%), 7px 7px 6px hsla(0, 0%, 0%, 0.6),
+			0px 0px 0 hsl(0, 0%, 51%), 1px 1px 0 hsl(0, 0%, 45%),
+			2px 2px 0 hsl(0, 0%, 39%), 3px 3px 0 hsl(0, 0%, 33%),
+			4px 4px 0 hsl(0, 0%, 27%), 5px 5px 0 hsl(0, 0%, 21%),
+			6px 6px 0 hsl(0, 0%, 15%), 7px 7px 6px hsla(0, 0%, 0%, 0.6),
 			7px 7px 1px hsla(0, 0%, 0%, 0.5), 0px 0px 6px hsla(0, 0%, 0%, 0.2);
 	}
 }
