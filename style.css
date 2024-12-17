@@ -236,7 +236,7 @@ button:active {
 		color: #000;
 	}
 
-	.clue-container{
+	.wrapper{
 		color: var(--main-font-color);
 		background-color: var(--main-bg-color);
 	}
