@@ -221,4 +221,8 @@ button:active {
 	--answer-bg-color:#be97dc;
 	--answer-bg-color:  rgb(185, 185, 221);
 	}
+
+	h1{
+		text-shadow: none;
+	}
 }
