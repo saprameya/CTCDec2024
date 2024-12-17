@@ -35,7 +35,7 @@ body {
 .message-modal {
 	display: none;
 	min-height: 90vh;
-	min-width: 70vw;
+	min-width: 80vw;
 	z-index: 120;
 	position: absolute;
 	top: 0%;
