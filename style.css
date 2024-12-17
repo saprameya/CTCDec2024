@@ -32,23 +32,22 @@ body {
 	color: var(--main-font-color);
 	font-family: 'Roboto', sans-serif;
 	font-size: clamp(1rem, 1vw + 0.5rem, 2rem);
-    padding: 1rem;
-    position: relative;
+	padding: 1rem;
+	position: relative;
 	background-color: var(--main-bg-color);
 }
 
-.black-out{
-    display: none;
-    position: absolute;
-    background-color: hsla(0, 0%, 0%, 0.37);
-    height: 140vh;
+.black-out {
+	display: none;
+	position: absolute;
+	background-color: hsla(0, 0%, 0%, 0.37);
+	height: 140vh;
 	min-height: 600px;
-    min-width: 100vw;
-    z-index: 100;
-	
+	min-width: 100vw;
+	z-index: 100;
 }
 
-.message-modal{
+.message-modal {
 	display: none;
 	min-height: 90vh;
 	min-width: 80vw;
@@ -62,57 +61,62 @@ body {
 	justify-content: center;
 	padding-top: 30vh;
 	font-size: 2rem;
-
 }
 
-.close{
+.close {
 	position: absolute;
 	top: 3%;
 	right: 5%;
 	cursor: pointer;
 }
 
-.message-modal.show{
+.message-modal.show {
 	display: block;
 }
 
-.play-again-btn{
+.play-again-btn {
 	margin-top: 10vh;
 	background-color: var(--main-bg-color);
 	color: var(--main-font-color);
-	
 }
 
-.over{
-    display: block;
+.over {
+	display: block;
 }
 .wrapper {
 	display: flex;
-    background-color: var(--main-bg-color);
+	background-color: var(--main-bg-color);
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: 10px auto;
 }
-h1{
-    width: 100%;
-    background-color: var(--main-font-color);
-    color: var(--main-bg-color);
-    text-align: center;
+h1 {
+	width: 100%;
+	background-color: var(--main-font-color);
+	color: var(--main-bg-color);
+	text-align: center;
+	text-shadow: 2px 0 var(--main-font-color), -2px 2px 0 var(--main-font-color),
+		-2px -2px 0 var(--main-font-color), 2px -2px 0 var(--main-font-color),
+		0px 0px 0 hsl(0, 0%, 71%), 1px 1px 0 hsl(0, 0%, 65%),
+		2px 2px 0 hsl(0, 0%, 59%), 3px 3px 0 hsl(0, 0%, 53%),
+		4px 4px 0 hsl(0, 0%, 48%), 5px 5px 0 hsl(0, 0%, 42%),
+		6px 6px 0 hsl(0, 0%, 36%), 7px 7px 6px hsla(0, 0%, 0%, 0.6),
+		7px 7px 1px hsla(0, 0%, 0%, 0.5), 0px 0px 6px hsla(0, 0%, 0%, 0.2);
 }
 
-.instructions{
+.instructions {
 	min-width: 50%;
 }
 
-.arrow-down{
+.arrow-down {
 	display: inline;
 }
 
-.arrow-up{
+.arrow-up {
 	display: none;
 }
-.instructions-wrapper{
+.instructions-wrapper {
 	display: block;
 	width: 80%;
 	margin-left: auto;
@@ -121,40 +125,37 @@ h1{
 	background-color: var(--main-font-color);
 }
 
-.instructions.expand{
+.instructions.expand {
 	min-height: 100%;
 }
 
-.instructions h5{
+.instructions h5 {
 	text-align: center;
 	/* text-decoration: underline; */
 	padding: 5px;
 	cursor: pointer;
 }
 
-
-.instructions ul{
+.instructions ul {
 	display: none;
 	border: 1px solid var(--main-font-color);
 	border-top: none;
 	padding: 15px;
-	
-
 }
 
-#instructions-list.expand{
+#instructions-list.expand {
 	display: block;
 }
-.instructions li{
+.instructions li {
 	list-style: none;
 	padding: 5px;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	justify-content: center;
-    margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .clue-container {
@@ -169,7 +170,6 @@ form{
 .clue-code {
 	font-weight: bold;
 }
-
 
 .ans-container {
 	display: flex;
@@ -186,10 +186,9 @@ form{
 	height: 2rem;
 	text-align: center;
 	box-shadow: inset 3px 3px 3px hsl(0, 0%, 80%);
-
 }
 
-button{
+button {
 	background-color: var(--main-font-color);
 	color: var(--main-bg-color);
 	border-radius: 10px;
@@ -201,7 +200,7 @@ button{
 	box-shadow: 5px 5px 20px hsl(0, 0%, 40%);
 }
 
-button:active{
+button:active {
 	box-shadow: inset 5px 5px 20px hsl(0, 0%, 40%);
 }
 
@@ -223,9 +222,8 @@ button:active{
 	justify-content: center;
 }
 
-.submit-btn{
-    width: 30%;
+.submit-btn {
+	width: 30%;
 	font-size: 1rem;
 	padding: 1vw;
 }
-
