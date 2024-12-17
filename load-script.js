@@ -69,8 +69,10 @@ answers.forEach((input) => {
 buttons.forEach((button) => {
 	button.addEventListener('click', (e) => {
 		e.preventDefault();
+		if(activeInput === null) alert('Please click on a box to enter your answer')
 		activeInput.value = button.value;
 		activeInput = activeInput.nextElementSibling;
+
 	});
 });
 

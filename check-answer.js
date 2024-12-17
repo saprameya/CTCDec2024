@@ -25,7 +25,7 @@ function checkAnswer(answer) {
 		alert('repetition of digits is not allowed');
 	} else {
 		checkWP(answer);
-		if (winning) message.innerText = 'You won!';
+		if (winning) message.innerText = 'Congratulations, you won!';
 		else message.innerText = 'You lost... Better luck next time!';
 
 		blackOut.classList.add('over');

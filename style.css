@@ -218,11 +218,16 @@ button:active {
 	body{
 		--main-font-color: #fffbbe ;
 	--main-bg-color: #a374d5;
-	--answer-bg-color:#be97dc;
-	--answer-bg-color:  rgb(185, 185, 221);
+	
+	--answer-bg-color:  #babade;
 	}
 
 	h1{
 		text-shadow: none;
+	}
+
+	.answer{
+		background-color: var(--answer-bg-color);
+		
 	}
 }
